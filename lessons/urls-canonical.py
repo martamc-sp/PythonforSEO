@@ -10,7 +10,6 @@ cerror = 0
 mydata = open("FILEPATH/data.txt", "w")
 for websiteurls in xml_urls:
     source = BeautifulSoup(requests.get(websiteurls).text , 'html.parser')
-    
     try:
         count += 1
         mydata.write("yes!")
