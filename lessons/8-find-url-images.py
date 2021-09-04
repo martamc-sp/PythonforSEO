@@ -2,6 +2,8 @@ import requests
 from bs4 import BeautifulSoup
 import json
 
+""" Video : https://youtu.be/WsjaA9Wwuo8 """
+
 url = 'https://upzerk.com/sitemap.xml'
 sitemapsoup = BeautifulSoup(requests.get(url).content, 'lxml')
 sitemapurls = sitemapsoup.find_all("loc")
